@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    repo: https://github.com/tamer5000/n8n
+    plan: free
+    branch: master
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: P@ssw0rd
+      - key: WEBHOOK_TUNNEL_URL
+        value: https://n8n.onrender.com
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 5678
