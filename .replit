@@ -1,0 +1,1 @@
+run = "docker build -t n8n . && docker run -p 5678:5678 -e N8N_BASIC_AUTH_ACTIVE=true -e N8N_BASIC_AUTH_USER=admin -e N8N_BASIC_AUTH_PASSWORD=123456 n8n"
